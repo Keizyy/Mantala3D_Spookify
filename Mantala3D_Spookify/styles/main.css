@@ -1,0 +1,266 @@
+:root {
+  --spacer: 3rem;
+  --box-shadow: 0.3rem 0.3rem 1.5rem rgb(0, 0, 0, 0.15);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+p,
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+ul[class],
+ol[class] {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.flow-content > * + * {
+  margin-top: var(--flow-spacer, var(--spacer));
+}
+
+body{
+  background-color: #050505;
+}
+
+span{
+  color:#ed9632;
+  font-weight: bold;
+  text-shadow: 0px 0px 20px #ffc216;
+}
+
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 80px;
+  font-size: 26px;
+}
+
+nav p{
+  color: orangered;
+  font-weight: bold;
+  text-shadow: 0px 0px 20px orangered;
+}
+nav li{
+  list-style: none;
+  font-size: 18px;
+  color: #3D2892;
+}
+nav ul{
+  display: flex;
+  flex-direction: row;
+  grid-gap: 100px;
+}
+nav a{
+  text-decoration: none;
+  color: orangered;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.hallow{
+  display: flex;
+  flex-direction: row-reverse;
+  grid-gap: 18px;
+}
+.hallow img{
+  margin-top: 50px;
+  display: flex;
+}
+.hallowtext{
+  margin-left: 80px;
+}
+.hallowtext h1{
+  color: orangered;
+  text-transform: uppercase;
+  font-size: 64px;
+  margin-bottom: 30px;
+  margin-right: 20px;
+  margin-top: 50px;
+}
+.hallowtext h2{
+  font-size: 32px;
+  color: yellow;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+.hallowtext a{
+  text-decoration: none;
+  display: flex;
+  width: 120px;
+  height: 50px;
+  justify-content: center;
+  color:aliceblue;
+  background-color:blueviolet;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  box-shadow: 0px 0px 20px 2px hsl(263, 100%, 50%);
+}
+
+.hallowstories h2{
+  font-size: 32px;
+  color: #3808f7;
+  text-align: center;
+  padding: 40px 0px;
+  margin-top: 30px;
+  text-shadow: 0px 0px 20px #3300fd;
+}
+.hallowtop{
+  display: flex;
+  flex-direction: column;
+  grid-gap: 100px;
+  margin-top: 50px;
+}
+.hallowtoptext{
+  display: flex;
+  flex-direction: row-reverse;
+  grid-gap: 100px;
+  justify-content: center;
+}
+.hallowcontent{
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  grid-gap: 40px;
+}
+.hallowtoptext h3{
+  color: orangered;
+  font-size: 28px;
+  text-transform: uppercase;
+}
+.hallowtoptext p{
+  color: #023cfa;
+  font-size: 18px;
+}
+.hallowbottom{
+  font-size: 18px;
+  text-align: left;
+}
+.hallowbottom a{
+  text-decoration: none;
+  color: #fae106;
+  text-shadow: 0px 0px 20px #FFFAFB;
+}
+.hallowtop img{
+  border-radius: 5px;
+  box-shadow: -11px -10px 4px #6202fc;
+}
+
+.hallowtoptexted{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  grid-gap: 50px;
+  margin-top: 50px;
+}
+.hallowtoptexted h3{
+  color: #fa2e00;
+  font-size: 28px;
+  text-transform: uppercase;
+}
+.hallowtopcontent{
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  grid-gap: 40px;
+}
+.hallowtoptexted p{
+  color:#023cfa;
+  font-size: 18px;
+  justify-content: center;
+}
+.hallowtoptexted img{
+  border-radius: 5px;
+  box-shadow: 11px -10px 4px #f55c03;
+}
+
+.hallowguild{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px 80px;
+  text-align: center;
+  grid-gap: 50px;
+}
+.hallowauthors h2{
+  font-size: 32px;
+  color: #3808f7;
+  text-align: center;
+  padding: 50px 0px;
+  text-shadow: 0px 0px 20px #3D2892;
+  margin-top: 50px;
+}
+.hallowauthors h3{
+  color: #fd2e00;
+  font-size: 28px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 10px 80px;
+}
+.hallowauthors p{
+  color: yellow;
+  font-size: 18px;
+  padding: 10px 60px;
+}
+
+.hallowfooter{
+  position: relative;
+}
+.hallowfooter img{
+  width: 100%;
+}
+.hallowfooter .hallowbottom{
+  width: 90px;
+  height: 20px;
+}
+.hallowtexts{
+  width: 300px;
+  height: 30px;
+}
+.hallowfooter h1{
+  color: #4b2dc0;
+  text-align: center;
+  font-size: 64px;
+}
+.hallowfooter p{
+  color: orangered;
+  font-size: 18px;
+  text-align: center;
+}
+.halloween{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 230px;
+  grid-gap: 60px;
+  width: 100%;
+}
+.paragraph{
+  position: absolute;
+  top: 350px;
+  justify-content: center;
+  width: 100%
+}
+
+@media(max-width: 412px){
+
+}
